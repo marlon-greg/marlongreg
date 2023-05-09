@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title >CRACKER</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="shortcut icon" type="image/jpg" href=".jpg"/>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="estilo.css">
+
+ <!-- FUNDO COM GIF --------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+   <style type="text/css">
+
+  body{
+  background: url('hacker.gif') center center no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+  </style>
+
+</head>
+
+
+
+<body background=".jpg" style="background-size:100%;" >
+
+ <div style="padding: 10px; background-color: black;">
+ <h2 align="center" style="color:white"><b> TUDO SOBRE OS CRACKERS </b></h2>
+ <div>
+ <nav id="menu">
+      <ul>
+          <li class="LI1"><a href="PÁGINA.html">TUDO</a></li>
+          <li class="LI1"><a href="História.html">HISTÓRIA</a></li>
+          <li class="LI1"><a href="Crackers.html">CRACKERS</a></li>
+		  <li class="LI1"><a href="Simuladores.html">SIMULADORES</a></li>
+		  <li class="LI1"><a href="Filmes.html">FILMES</a></li>
+		  <li class="LI1"><a href="Criador.html">CRIADOR</a></li>
+      </ul>
+</nav></div>
+ </div>
+
+
+
+
+ <!-- FUNDO COM GIF --------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+ <script type="text/javascript">
+var imageCount = 0;
+var currentImage = 0;
+var images = new Array();
+
+images[0] = 'hacker.gif';
+images[1] = 'hacker2.gif';
+images[2] = 'hacker3.gif';
+images[3] = 'hacker4.gif';
+images[4] = 'hacker5.gif';
+images[5] = 'hacker6.gif';
+images[6] = 'hacker7.gif';
+images[7] = 'hacker8.gif';
+images[8] = 'hacker9.gif';
+
+
+var preLoadImages = new Array();
+for (var i = 0; i < images.length; i++)
+{
+   if (images[i] == "")
+      break;
+
+   preLoadImages[i] = new Image();
+   preLoadImages[i].src = images[i];
+   imageCount++;
+}
+
+function startSlideShow()
+{
+   if (document.body && imageCount > 0)
+   {
+      document.body.style.backgroundImage = "url("+images[currentImage]+")";
+      document.body.style.backgroundAttachment = "fixed";
+      document.body.style.backgroundRepeat = "repeat";
+      document.body.style.backgroundPosition = "left top";
+
+      currentImage = currentImage + 1;
+      if (currentImage > (imageCount-1))
+      {
+         currentImage = 0;
+      }
+      setTimeout('startSlideShow()', 3000);
+   }
+}
+startSlideShow();
+</script>
+
+
+
+ <div class="container" style="size:100">
+
+ <h3><b><font color="white"> OS 5 CRACKERS MAIS PERIGOSOS DO MUNDO:</font></b></h3>
+ </br>
+ <div class="table-responsive">
+ <table class="table table-striped" style="background-color:black;">
+   <thead>
+     <tr>
+      <th> <font color="White">Nome </font></th>
+       <th> <font color="White">Nacionalidade </font></th>
+       <th> <font color="White">História </font></th>
+
+  </tr>
+   </thead>
+   <tbody>
+     <tr>
+       <td><p align="center">Gary McKinnon</p>
+  <a href="https://pt.wikipedia.org/wiki/Gary_McKinnon" target="blank">
+  <img src="Gary McKinnon.jpg" alt="Gary McKinnon" title="Gary McKinnon" width="200px" height="150px" align="center"/>
+  </a>
+  </td>
+       <td><p align="center">Reino Unido </p>
+  <img src="Reino Unido.png" alt="Reino Unido" title="Reino Unido" width="200px" height="150px" align="center"/>
+
+  </td>
+       <td><p align="justify">Gary McKinnon era um administrador de sistemas desempregado quando começou a acessar redes militares dos Estados Unidos.
+  O hacker apagou importantes arquivos do sistema operacional - o governo americano afirmou que McKinnon causou um
+  prejuízo de centenas de milhares de dólares ao danificar sistemas de mísseis enquanto procurava por informações
+  sobre energia livre e OVNIs. De acordo com as autoridades, este foi o maior ataque realizado na América por uma
+  única pessoa. McKinnon foi extraditado para o Reino Unido após anos de processos.</td>
+     </p></tr>
+
+
+     <tr>
+       <td><p align="center"><font color="white">Kevin Mitnick</font></p>
+  <a href="https://pt.wikipedia.org/wiki/Kevin_Mitnick" target="blank">
+       <img src="Kevin Mitnick.jpg" alt="Gary McKinnon" title="Gary McKinnon" width="200px" height="150px" align="center"/>
+  </a>
+
+  </td>
+       <td><font color="white"><p align="center">Estados Unidos</font> </p>
+  <img src="Estados Unidos.png" alt="Estados Unidos" title="Estados Unidos" width="200px" height="150px" align="center"/>
+
+  </td>
+       <td><font color="white"><p align="justify">Um dos CRACKERS mais famosos de todos os tempos, Kevin Mitnick foi o responsável por invadir uma
+  vasta gama de sistemas e servidores durante vários anos. Só para começar, ele invadiu sistemas de empresas de telefonia a fim de copiar
+  informações confidencias e alterar dados importantes nos servidores. Mitnick também conseguiu invadir contas de e-mail privadas para roubar
+  senhas e foi até capaz de ler o conteúdo, tornando-se o hacker mais procurado pelo governo americano antes de ser preso em 1995. Vinte anos depois,
+  Kevin trabalha em uma empresa de segurança, ajudando sites e empresas a bloquear tentativas hackers em seus sistemas.</td>
+     </font></p></tr>
+
+
+     <tr>
+       <td><p align="center">Vladmir Levin</p>
+  <a href="https://en.wikipedia.org/wiki/Vladimir_Levin" target="blank">
+  <img src="Vladmir Levin.jpg" alt="Vladmir Levin" title="Vladmir Levin" width="200px" height="150px" align="center"/>
+  </a>
+
+  </td>
+       <td><p align="center">Rússia</p>
+
+  <img src="Russia.jpg" alt="Rússia" title="Rússia" width="200px" height="150px" align="center"/>
+
+  </td>
+       <td><p align="justify">Enquanto alguns CRACKERS invadem sistemas militares ou do governo a fim de descobrir informações confidencias ou em forma de protesto,
+  outros o fazem em benefício próprio. Foi exatamente o que fez Vladimir Levin em 1994, quando ele conseguiu acessar a rede Citibank e foi capaz de roubar mais de U$10 milhões.
+  O hacker russo acabou sendo preso no Reino Unido e foi extraditado para os Estados Unidos, onde passou três anos na prisão. O banco só conseguiu recuperar U$400.000 dos fundos roubados.
+  O que aconteceu com o resto do dinheiro ainda é um mistério.</td>
+     </p></tr>
+
+
+  <tr>
+       <td><p align="center"><font color="white">Owen Walker</font></p>
+  <a href="https://pt.wikipedia.org/wiki/Owen_Thor_Walker" target="blank">
+       <img src="Owen Walker.jpg" alt="Owen Walker" title="Owen Walker" width="200px" height="150px" align="center"/>
+  </a>
+
+  </td>
+       <td><font color="white"><p align="center">Nova Zelândia</font> </p>
+  <img src="Nova Zelândia.jpeg" alt="Nova Zelândia" title="Nova Zelândia" width="200px" height="150px" align="center"/>
+
+  </td>
+       <td><font color="white"><p align="justify">Mais conhecido como AKILL, Owen Walker foi um hacker altamente qualificado que orquestrou ataques a uma série de sites e sistemas de computador ao
+  longo de muitos anos. Ele foi o principal responsável pela criação do vírus Akbot, que lhe permitiu assumir o controle de milhões de computadores ao redor mundo a fim de usá-los para lançar ataques
+  contra alvos específicos. Especialistas estimam que o prejuízo financeiro causado pelo vírus e seus hacks subsequentes foi de incríveis 26 milhões de dólares.</td>
+     </font></p></tr>
+
+  <tr>
+       <td><p align="center">Astra</p>
+  <a href="not_found.gif" target="blank">
+  <img src="Astra.jpg" alt="Astra" title="Astra" width="200px" height="150px" align="center"/>
+
+  </td>
+       <td><p align="center">Grécia</p>
+  <img src="Grécia.png" alt="Grécia" title="Grécia" width="200px" height="150px" align="center"/>
+
+  </td>
+       <td><p align="justify">Ainda que o nome real deste hacker nunca tenha sido divulgado oficialmente, a polícia grega acredita que ele seja um matemático de 58 anos de idade que vive em Atenas.
+  O homem era procurado por vários crimes virtuais desde 2002, mas ficou em evidência em 2005, quando invadiu os sistemas da Dassault, uma companhia militar francês. Ele roubou informações confidencias sobre armas,
+  aviões e outras tecnologias antes de vendê-las. Os promotores acreditam que o hacker causou cerca de U$360 milhões de dólares de danos a Dassault. Imagina se ele resolver atacar de novo? Quem seria o novo alvo?.</td>
+     </p></tr>
+
+
+   </tbody>
+ </table>
+ </div>
+ </br
+</div>
+</body>
+</html>

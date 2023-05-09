@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title >CRACKER</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="shortcut icon" type="image/jpg" href=".jpg"/>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="estilo.css">
+
+ <!-- FUNDO COM GIF --------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+   <style type="text/css">
+
+  body{
+  background: url('hacker.gif') center center no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+  </style>
+
+</head>
+
+
+
+<body background=".jpg" style="background-size:100%;" >
+
+ <div style="padding: 10px; background-color: black;">
+ <h2 align="center" style="color:white"><b> TUDO SOBRE OS CRACKERS </b></h2>
+ <div>
+ <nav id="menu">
+      <ul>
+          <li class="LI1"><a href="PÁGINA.html">TUDO</a></li>
+          <li class="LI1"><a href="História.html">HISTÓRIA</a></li>
+          <li class="LI1"><a href="Crackers.html">CRACKERS</a></li>
+		  <li class="LI1"><a href="Simuladores.html">SIMULADORES</a></li>
+		  <li class="LI1"><a href="Filmes.html">FILMES</a></li>
+		  <li class="LI1"><a href="Criador.html">CRIADOR</a></li>
+      </ul>
+</nav></div>
+ </div>
+
+
+
+
+ <!-- FUNDO COM GIF --------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+ <script type="text/javascript">
+var imageCount = 0;
+var currentImage = 0;
+var images = new Array();
+
+images[0] = 'hacker.gif';
+images[1] = 'hacker2.gif';
+images[2] = 'hacker3.gif';
+images[3] = 'hacker4.gif';
+images[4] = 'hacker5.gif';
+images[5] = 'hacker6.gif';
+images[6] = 'hacker7.gif';
+images[7] = 'hacker8.gif';
+images[8] = 'hacker9.gif';
+
+
+var preLoadImages = new Array();
+for (var i = 0; i < images.length; i++)
+{
+   if (images[i] == "")
+      break;
+
+   preLoadImages[i] = new Image();
+   preLoadImages[i].src = images[i];
+   imageCount++;
+}
+
+function startSlideShow()
+{
+   if (document.body && imageCount > 0)
+   {
+      document.body.style.backgroundImage = "url("+images[currentImage]+")";
+      document.body.style.backgroundAttachment = "fixed";
+      document.body.style.backgroundRepeat = "repeat";
+      document.body.style.backgroundPosition = "left top";
+
+      currentImage = currentImage + 1;
+      if (currentImage > (imageCount-1))
+      {
+         currentImage = 0;
+      }
+      setTimeout('startSlideShow()', 3000);
+   }
+}
+startSlideShow();
+</script>
+
+<div class="container" style="size:100">
+
+
+<h3><b><font color="white">FILMES RELACIONADOS</font></b></h3>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<!-- INDICADORES -->
+<ol class="carousel-indicators">
+  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+  <li data-target="#myCarousel" data-slide-to="1"></li>
+  <li data-target="#myCarousel" data-slide-to="2"></li>
+<li data-target="#myCarousel" data-slide-to="3"></li>
+</ol>
+
+<!-- IMAGENS E TEXTO PARA CADA ABA -->
+<div class="carousel-inner">
+ <div class="item active">
+ <a href="http://www.adorocinema.com/filmes/filme-19776/" target="blank" >
+  <img src="Matrix.jpg" alt="Matrix" title="Matrix" style="width:100%;">
+  </a>
+<div class="carousel-caption">
+<h3><b>MATRIX</b></h3>
+</div>
+  </div>
+
+
+  <div class="item">
+  <a href="http://www.adorocinema.com/filmes/filme-184748/" target="blank" >
+  
+<img src="invasores5.jpg" alt="Invasores" title="Invasores" style="width:100%;">
+</a>
+<div class="carousel-caption">
+<h3><b> INVASORES </b></h3>
+</div>
+  </div>
+
+  <div class="item">
+  <a href="http://www.adorocinema.com/filmes/filme-225237/" target="blank" >
+<img src="Hacker.jpg" alt="Hacker" title="Hacker" style="width:100%;">
+</a>
+<div class="carousel-caption">
+
+</div>
+  </div>
+
+
+<div class="item">
+<a href="http://www.adorocinema.com/filmes/filme-198371/" target="blank" >
+<img src="O jogo da imitação.jpg" alt="O jogo da imitação" title="O jogo da imitação" style="width:100%;">
+</a>
+<div class="carousel-caption">
+<h3> <b> O JOGO DA IMITAÇÃO </b></h3>
+</div>
+  </div>
+</div>
+
+<!-- CONTROLANDO AS DIREÇÕES -->
+<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+  <span class="glyphicon glyphicon-chevron-left"></span>
+  <span class="sr-only">Previous</span>
+</a>
+<a class="right carousel-control" href="#myCarousel" data-slide="next">
+  <span class="glyphicon glyphicon-chevron-right"></span>
+  <span class="sr-only">Next</span>
+</a>
+</div>
+</br>
+
+<!-- ------------------------------TRAILERS-------------------------------------------------- -->
+
+<h3><b><font color="white">TRAILERS</font></b></h3>
+</br>
+<div style="embed-responsive embed-responsive-16by9 "align="center" style="float:left;">
+<iframe style="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/2KnZac176Hs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen align="center"></iframe>
+<iframe style="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/YZ4c2uL_UZ8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen align="center"></iframe>
+</div>
+</br>
+
+<div style="embed-responsive embed-responsive-16by9 "align="center" style="float:left;">
+<iframe style="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/C7QaZe8DloY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen align="center"></iframe>
+<iframe style="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/NM4GZ3NQvxQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen align="center"></iframe>
+</div>
+</br>
+</div>
+</body>
+</html>

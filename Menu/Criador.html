@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title >CRACKER</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="shortcut icon" type="image/jpg" href=".jpg"/>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="estilo.css">
+
+ <!-- FUNDO COM GIF --------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+   <style type="text/css">
+
+  body{
+  background: url('hacker.gif') center center no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+  </style>
+
+</head>
+
+
+
+<body background=".jpg" style="background-size:100%;" >
+
+ <div style="padding: 10px; background-color: black;">
+ <h2 align="center" style="color:white"><b> TUDO SOBRE OS CRACKERS </b></h2>
+ <div>
+ <nav id="menu">
+      <ul>
+          <li class="LI1"><a href="PÁGINA.html">TUDO</a></li>
+          <li class="LI1"><a href="História.html">HISTÓRIA</a></li>
+          <li class="LI1"><a href="Crackers.html">CRACKERS</a></li>
+		  <li class="LI1"><a href="Simuladores.html">SIMULADORES</a></li>
+		  <li class="LI1"><a href="Filmes.html">FILMES</a></li>
+		  <li class="LI1"><a href="Criador.html">CRIADOR</a></li>
+      </ul>
+</nav></div>
+ </div>
+
+
+
+
+ <!-- FUNDO COM GIF --------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+ <script type="text/javascript">
+var imageCount = 0;
+var currentImage = 0;
+var images = new Array();
+
+images[0] = 'hacker.gif';
+images[1] = 'hacker2.gif';
+images[2] = 'hacker3.gif';
+images[3] = 'hacker4.gif';
+images[4] = 'hacker5.gif';
+images[5] = 'hacker6.gif';
+images[6] = 'hacker7.gif';
+images[7] = 'hacker8.gif';
+images[8] = 'hacker9.gif';
+
+
+var preLoadImages = new Array();
+for (var i = 0; i < images.length; i++)
+{
+   if (images[i] == "")
+      break;
+
+   preLoadImages[i] = new Image();
+   preLoadImages[i].src = images[i];
+   imageCount++;
+}
+
+function startSlideShow()
+{
+   if (document.body && imageCount > 0)
+   {
+      document.body.style.backgroundImage = "url("+images[currentImage]+")";
+      document.body.style.backgroundAttachment = "fixed";
+      document.body.style.backgroundRepeat = "repeat";
+      document.body.style.backgroundPosition = "left top";
+
+      currentImage = currentImage + 1;
+      if (currentImage > (imageCount-1))
+      {
+         currentImage = 0;
+      }
+      setTimeout('startSlideShow()', 3000);
+   }
+}
+startSlideShow();
+</script>
+
+
+
+
+
+
+
+ <div class="container" style="size:100%;" align="center">
+
+  <img src="HACKEADO.GIF" style="color:black;" alt="Marlon Fanger Rodrigues" title="Marlon Fanger Rodrigues" width="400px" height="400px" align="center"/>
+</br>
+
+
+<div style="padding: 1px; background-color: black;">
+<h3 align="center" style="color:white"><b> MARLON FANGER RODRIGUES </b></h3>
+</div>
+
+<div style="padding: 5px; background-color: green;">
+<div style="padding: 1%; background-color: black; border-radius:15px;">
+<p align="justify"><b>
+<font color="green"><b><font size="4px" color="white"> Escolaridade </font></b></br></br>
+Curso: Redes de Computadores </br>
+Instituição: Fatec Indaiatuba</br>
+Período: 2018 (Cursando).</br>
+</br>
+Curso: Técnico em Informática</br>
+Instituição: Instituto Federal de São Paulo</br>
+Período: 2012 - 2013.</br>
+</br>
+Curso: Ensino Médio</br>
+Instituição: E.E. Helena de Campos Camargo</br>
+Período: 2011 - 2013.</br>
+</font>
+
+
+
+</div>
+</div>
+</BR>
+</BR>
+</BR>
+
+
+<img src="conhecimentos.png" style="color:black;" alt="Gary McKinnon" title="Gary McKinnon" width="1000px" height="400px" align="center"/>
+
+ </div>
+ </body>
+ </html>
